@@ -1,0 +1,12 @@
+// Code
+// --------------------------------------------------
+
+pre, code, kbd, samp, var {
+  font-family: $font-family-monospace;
+  font-size: 1em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

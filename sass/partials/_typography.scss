@@ -1,0 +1,139 @@
+// Typography
+// --------------------------------------------------
+
+// Paragraph
+// ==========================================================================
+
+p {
+  margin: 0.25em 0em;
+  padding: 0px;
+  text-align: left;
+}
+p.lead {
+  @include font-size-rem($paragraph-lead);
+}
+
+// Heading
+// ==========================================================================
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family;
+  line-height: $line-height;
+}
+h1 {
+  @include font-size-rem($h1-font-size);
+  color: $font-color;
+  padding: 0px;
+  margin: 0px;
+}
+h2 {
+  @include font-size-rem($h2-font-size);
+  color: $font-color;
+  padding: 0px;
+  margin: 0px;
+}
+h3 {
+  @include font-size-rem($h3-font-size);
+  color: $font-color;
+  padding: 0px;
+  margin: 0px;
+}
+h4 {
+  @include font-size-rem($h4-font-size);
+  color: $font-color;
+  margin: 0px;
+  padding: 0px;
+}
+h5 {
+  @include font-size-rem($h5-font-size);
+  color: $font-color;
+  margin: 0px;
+  padding: 0px;
+}
+
+// Inline text elements
+// ==========================================================================
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+small {
+  font-size: 85%;
+}
+b, strong {
+  font-weight: bold;
+}
+
+// Alignment
+// ==========================================================================
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+
+// Transformation
+// ==========================================================================
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+// Abbreviations
+// ==========================================================================
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+// Blockquotes
+// ==========================================================================
+
+blockquote {
+  @include padding(5px, 15px, 5px, 15px);
+  @include margin(0, 0, 10px, 0);
+  border-left: 5px solid $border-color;
+}
+blockquote.right {
+  @include padding(5px, 15px, 5px, 15px);
+  @include margin(0, 0, 10px, 0);
+  border-left: 0;
+  border-right: 5px solid $border-color;
+  text-align: right;
+}
+blockquote.right p {
+  text-align: right;
+}
+
+// List Types
+// ==========================================================================
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}

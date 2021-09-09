@@ -1,0 +1,26 @@
+{
+  "name": "brandonhimpfen/bedrock",
+  "description": "Bedrock is a lightweight, feature-rich front-end framework for developing responsive, mobile first websites and web apps.",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "frontend",
+    "framework",
+    "web",
+    "apps"
+  ],
+  "homepage": "http://www.himpfen.com/bedrock/",
+  "authors": [
+    {
+      "name": "Brandon Himpfen",
+      "email": "brandon@himpfen.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/brandonhimpfen/bedrock/issues"
+  },
+  "license": "MIT"
+}

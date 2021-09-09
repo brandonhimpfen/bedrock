@@ -1,0 +1,11 @@
+// Margin
+// Usage: @include margin(top, left, bottom, right);
+// Example: @include margin(1px, 2px, 3px, 4px);
+// --------------------------------------------------
+
+@mixin margin($top, $left, $bottom, $right) {
+  margin-top: $top;
+  margin-left: $left;
+  margin-bottom: $bottom;
+  margin-right: $right;
+}

@@ -1,0 +1,10 @@
+// Border
+// Usage: @include border(1px, solid, #000);
+// --------------------------------------------------
+
+// Multiple sides
+@mixin border($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}

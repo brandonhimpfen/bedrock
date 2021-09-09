@@ -1,0 +1,38 @@
+// Tables
+// --------------------------------------------------
+
+.showcase {
+  background-color: $showcase-bg;
+  @include padding(30px, 60px, 30px, 60px);
+  @include border-radius($border-radius);
+  @include font-size-rem($showcase-font-size);
+  @include margin(10px, null, 10px, null);
+
+}
+.showcase-small {
+  @include padding(20px, null, 20px, null);
+}
+.showcase-small h1 {
+  @include font-size-rem($h1-font-size * 0.85);
+}
+.showcase-small p {
+  @include font-size-rem($showcase-font-size * 0.85);
+}
+.showcase-large {
+  @include padding(48px, null, 48px, null);
+}
+.showcase-large h1 {
+  @include font-size-rem($h1-font-size * 1.15);
+}
+.showcase-large p {
+  @include font-size-rem($showcase-font-size * 1.15);
+}
+.showcase-huge {
+  @include padding(60px, null, 60px, null);
+}
+.showcase-huge h1 {
+  @include font-size-rem($h1-font-size * 1.25);
+}
+.showcase-huge p {
+  @include font-size-rem($showcase-font-size * 1.25);
+}

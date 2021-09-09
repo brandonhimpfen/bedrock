@@ -1,0 +1,58 @@
+// Forms
+// --------------------------------------------------
+
+form {
+  margin: 0;
+}
+label {
+  cursor: pointer;
+  font-weight: bold;
+}
+input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+input {
+  line-height: normal;
+  *overflow: visible;
+  @include padding(4px, 10px, 5px, 10px);
+  @include font-size-rem($font-size);
+}
+.input-huge {
+  @include padding(15px, 22px, 15px, 22px);
+  @include font-size-rem($font-size-button-huge);
+}
+.input-large {
+  @include padding(10px, 16px, 10px, 16px);
+  @include font-size-rem($font-size-button-large);
+}
+.input-small {
+  @include padding(5px, 10px, 5px, 10px);
+  @include font-size-rem($font-size-button-small);
+}

@@ -1,0 +1,96 @@
+// Buttons
+// --------------------------------------------------
+
+.button {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    @include padding(6px, 12px, 6px, 12px);
+    @include font-size-rem($font-size);
+    line-height: $line-height;
+    @include border-radius($border-radius);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: $button-color;
+}
+a.button,
+a.button:link,
+a.button:visited,
+a.button:active,
+a.button:hover {
+    text-decoration: none;
+}
+.button.active:focus,
+.button:active:focus,
+.button:focus {
+    outline: dotted thin;
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px;
+}
+.button:focus,
+.button:hover {
+    color: $button-color;
+    text-decoration: none;
+}
+.button.active,
+.button:active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.button.disabled,
+.button[disabled],
+fieldset[disabled] .button {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+// Button Sizes
+// ==========================================================================
+
+.button-huge {
+    @include padding(15px, 22px, 15px, 22px);
+    @include font-size-rem($font-size-button-huge);
+    line-height: 1.33;
+    @include border-radius($border-radius-button-huge);
+    text-decoration: none;
+}
+.button-large {
+    @include padding(10px, 16px, 10px, 16px);
+    @include font-size-rem($font-size-button-large);
+    line-height: 1.33;
+    @include border-radius($border-radius-button-large);
+    text-decoration: none;
+}
+.button-small {
+    @include padding(5px, 10px, 5px, 10px);
+    @include font-size-rem($font-size-button-small);
+    line-height: $line-height;
+    @include border-radius($border-radius-button-small);
+    text-decoration: none;
+}
+.button-block {
+    display: block;
+    width: 100%;
+}
+.button-block+.button-block {
+    margin-top: 5px;
+}
+input[type=button].button-block,
+input[type=reset].button-block,
+input[type=submit].button-block {
+    width: 100%;
+}

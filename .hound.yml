@@ -1,0 +1,4 @@
+scss:
+  config_file: .scss-lint.yml
+  enabled: true
+  ignore_file: sass/partials/_base.scss

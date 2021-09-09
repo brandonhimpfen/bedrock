@@ -1,0 +1,62 @@
+// Tags
+// --------------------------------------------------
+
+.tag {
+  display: inline-block;
+  font-weight: inherit;
+  text-align: center;
+  vertical-align: middle;
+  border: 0;
+  white-space: nowrap;
+  @include padding(2px, 8px, 2px, 8px);
+  font-size: inherit;
+  line-height: inherit;
+  @include border-radius($border-radius);
+  color: $tag-color;
+}
+.tag.bg-default {
+  color: $tag-color;
+}
+.tag.bg-primary {
+  color: $tag-color;
+}
+.tag.bg-secondary {
+  color: $tag-color;
+}
+.tag.bg-info {
+  color: $tag-color;
+}
+.tag.bg-success {
+  color: $tag-color;
+}
+.tag.bg-warning {
+  color: $tag-color;
+}
+.tag.bg-error {
+  color: $tag-color;
+}
+.tag-point-left,
+.tag-point-right {
+  margin-left: 1em;
+  position: relative;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  @include border-radius($border-radius);
+  -webkit-transition: none;
+  transition: none;
+}
+.tag-point-left:before {
+  position: absolute;
+  -webkit-transform: translateY(-50%) translateX(50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) translateX(50%) rotate(-45deg);
+  transform: translateY(-50%) translateX(50%) rotate(-45deg);
+  top: 50%;
+  right: 100%;
+  content: '';
+  background-color: inherit;
+  background-image: none;
+  width: 1.26em;
+  height: 1.26em;
+  -webkit-transition: none;
+  transition: none;
+}

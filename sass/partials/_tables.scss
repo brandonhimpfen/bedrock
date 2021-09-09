@@ -1,0 +1,34 @@
+// Tables
+// --------------------------------------------------
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  vertical-align: top;
+}
+table button, table input {
+  *overflow: auto;
+}
+table,th,tr,td {
+  text-align: left;
+}
+th,td {
+  @include padding(10px, 10px, 10px, 10px);
+}
+th {
+  background-color: $table-th-bg;
+}
+.table.table-striped>tbody>tr:nth-child(even) {
+  background-color: $table-striped-even-bg;
+}
+.table.table-striped>tbody>tr:nth-child(odd) {
+  background-color: $table-striped-odd-bg;
+}
+.table.table-border {
+  @include border(1px, solid, $table-border-color);
+}
+.table.table-td-border td {
+  @include border(1px, solid, $table-td-border-color);
+}

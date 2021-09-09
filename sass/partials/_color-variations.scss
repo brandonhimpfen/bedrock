@@ -1,0 +1,76 @@
+// Colour Variations
+// --------------------------------------------------
+
+// Buttons, Alerts, Backgrounds and Text Colour Variations
+
+@each $colour-name, $bedrock-colour in $bedrock-colour-list {
+  .button-#{$colour-name} {
+      background: $bedrock-colour;
+      border-radius: $border-radius;
+      color: #fff;
+      @include border(1px, solid, darken($bedrock-colour, 15%));
+  }
+  .button-#{$colour-name}:active, .button-#{$colour-name}:hover {
+      background: darken($bedrock-colour, $button-darken-bg);
+      color: #fff;
+  }
+  .button-outline-#{$colour-name} {
+      background: transparent;
+      border-radius: $border-radius;
+      color: $bedrock-colour;
+      @include border($button-outline-border-size, solid, $bedrock-colour);
+  }
+  .button-outline-#{$colour-name}:active, .button-outline-#{$colour-name}:hover {
+      background: transparent;
+      border: $button-outline-border-size solid darken($bedrock-colour, $button-darken-bg);
+      color: darken($bedrock-colour, $button-darken-bg);
+  }
+  .alert-#{$colour-name} {
+    color: lighten($bedrock-colour, 50%);
+    background-color: $bedrock-colour;
+    border-color: darken($bedrock-colour, 50%);
+    @include border(1px, solid, darken($bedrock-colour, 25%));
+  }
+  .alert-#{$colour-name} p {
+    color: lighten($bedrock-colour, 50%);
+  }
+  .alert-#{$colour-name} .alert-link {
+    color: darken($bedrock-colour, 25%);
+  }
+  .bg-#{$colour-name} {
+    background-color: $bedrock-colour;
+    color: #fff;
+  }
+  .bg-#{$colour-name} h1 {
+    color: #fff;
+  }
+  .text-#{$colour-name} {
+    color: $bedrock-colour;
+  }
+}
+
+// Extra Button Styles
+
+@each $button-name, $bedrock-extra in $bedrock-extra-buttons {
+  .button-#{$button-name} {
+      background: $bedrock-extra;
+      border-radius: $border-radius;
+      color: #fff;
+      @include border(1px, solid, darken($bedrock-extra, 15%));
+  }
+  .button-#{$button-name}:active, .button-#{$button-name}:hover {
+      background: darken($bedrock-extra, $button-darken-bg);
+      color: #fff;
+  }
+  .button-outline-#{$button-name} {
+      background: transparent;
+      border-radius: $border-radius;
+      color: $bedrock-extra;
+      @include border($button-outline-border-size, solid, $bedrock-extra);
+  }
+  .button-outline-#{$button-name}:active, .button-outline-#{$button-name}:hover {
+      background: transparent;
+      border: $button-outline-border-size solid darken($bedrock-extra, $button-darken-bg);
+      color: darken($bedrock-extra, $button-darken-bg);
+  }
+}

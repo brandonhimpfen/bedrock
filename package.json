@@ -1,0 +1,19 @@
+{
+  "name": "bedrock",
+  "version": "0.3.1",
+  "homepage": "http://www.boldoutlook.com/bedrock/",
+  "author": "Bold Outlook Media",
+  "scss": "./sass/bedrock.scss",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BoldOutlook/Bedrock.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-parker": "~0.1.0",
+    "grunt-sass": "^0.18.1",
+    "grunt-scss-lint": "^0.3.8"
+  }
+}

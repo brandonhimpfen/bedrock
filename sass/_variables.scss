@@ -1,0 +1,182 @@
+// Variables
+// --------------------------------------------------
+
+// Screen sizes
+// ==========================================================================
+
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+
+// Font styles
+// ==========================================================================
+
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-family: $font-family-sans-serif;
+$html-font-size: 16px;
+$font-size: 14px;
+$line-height: 1.5em;
+$font-color: #222;
+
+$h1-font-size: 32px;
+$h2-font-size: 26px;
+$h3-font-size: 22px;
+$h4-font-size: 18px;
+$h5-font-size: $font-size;
+
+$font-size-small: 0.92857143rem;
+$font-size-large: 1.14285714rem;
+$font-size-huge: 1.28571429rem;
+
+$font-size-button-small: 12px;
+$font-size-button-large: 18px;
+$font-size-button-huge: 24px;
+
+$paragraph-lead-multiplier: 1.25; // state multiplier as a number, not a percentage. 125% equals 1.25.
+$paragraph-lead: $font-size * $paragraph-lead-multiplier;
+
+// Links
+// ==========================================================================
+
+$link-color: #12C2E9;
+$link-color-hover: #007da5;
+
+// Selection Colours
+// ==========================================================================
+
+$selection-bg: #12C2E9;
+$selection-color: #FFF;
+
+// General
+// ==========================================================================
+
+$border-color: #CCC;
+$hr-border-color: #CCC;
+
+// Border Radius
+// ==========================================================================
+
+$border-radius: 0;
+$border-radius-button-small: 0;
+$border-radius-button-large: 0;
+$border-radius-button-huge: 0;
+$border-radius-pagination-small: 0;
+$border-radius-pagination-large: 0;
+$border-radius-pagination-huge: 0;
+
+// Colours: Default colours but you can override for each component
+// ==========================================================================
+
+$color-default: #D9D9D9;
+$color-primary: #1C7EBB;
+$color-secondary: #9933CC;
+$color-info: #2EC1CC;
+$color-success: #77B300;
+$color-warning: #FF8800;
+$color-error: #CC0000;
+$color-red: #F44336;
+$color-orange: #FF9800;
+$color-yellow: #FFEB3B;
+$color-amber: #FFC107;
+$color-olive: #CDDC39;
+$color-green: #4CAF50;
+$color-teal: #009688;
+$color-blue: #2196F3;
+$color-violet: #9C27B0;
+$color-purple: #673AB7;
+$color-pink: #E91E63;
+$color-brown: #795548;
+$color-grey: #9E9E9E;
+$color-black: #000000;
+
+$bedrock-colour-list: (
+  default $color-default,
+  primary $color-primary,
+  secondary $color-secondary,
+  info $color-info,
+  success $color-success,
+  warning $color-warning,
+  error $color-error,
+  red $color-red,
+  orange $color-orange,
+  yellow $color-yellow,
+  amber $color-amber,
+  olive $color-olive,
+  green $color-green,
+  teal $color-teal,
+  blue $color-blue,
+  violet $color-violet,
+  purple $color-purple,
+  pink $color-pink,
+  brown $color-brown,
+  grey $color-grey,
+  black $color-black
+);
+
+// Buttons
+// ==========================================================================
+
+$button-color: #FFF;
+
+$button-darken-bg: 15%;
+$button-lighten-bg: 15%;
+
+$button-outline-border-size: 1px;
+
+$color-twitter: #00ACEE;
+$color-facebook: #3B5998;
+$color-googleplus: #E93F2E;
+$color-stumbleupon: #fF4425;
+$color-linkedin: #0E76A8;
+$color-reddit: #EE3825;
+$color-email: #111;
+$color-search: #aaa;
+$color-subscribe: #bbb;
+$color-order: #ccc;
+$color-register: #ddd;
+$color-login: #eee;
+
+$bedrock-extra-buttons: (
+  search $color-search,
+  subscribe $color-subscribe,
+  order $color-order,
+  register $color-register,
+  login $color-login,
+  twitter $color-twitter,
+  facebook $color-facebook,
+  googleplus $color-googleplus,
+  stumbleupon $color-stumbleupon,
+  linkedin $color-linkedin,
+  reddit $color-reddit,
+  email $color-email
+);
+
+// Grids and Containers
+// ==========================================================================
+
+$container-size: 1140px;
+
+// Tags / Labels
+// ==========================================================================
+
+$tag-color: #FFF;
+
+// Tables
+// ==========================================================================
+
+$table-border-color: #DDD;
+$table-td-border-color: #DDD;
+$table-th-bg: #DDD;
+$table-striped-even-bg: #FFF;
+$table-striped-odd-bg: #EEE;
+
+// Tables
+// ==========================================================================
+
+$showcase-bg: #EEE;
+$showcase-font-size-multiplier: 1.15;  // state multiplier as a number, not a percentage. 125% equals 1.25.
+$showcase-font-size: $font-size * $showcase-font-size-multiplier;

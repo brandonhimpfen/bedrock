@@ -1,0 +1,32 @@
+// Images
+// --------------------------------------------------
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+img.responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+img.rounded {
+  @include border-radius(12px);
+}
+img.thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  @include padding(4px, 4px, 4px, 4px);
+  line-height: $line-height;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  @include border-radius(4px);
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+img.circle {
+  @include border-radius(50%);
+}

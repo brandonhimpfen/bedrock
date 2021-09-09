@@ -1,0 +1,14 @@
+// Helpers
+// --------------------------------------------------
+
+// Pixel to rem converter for fonts
+@function font-rem($size) {
+  $rem-size: $size / $html-font-size;
+  @return $rem-size * 1rem;
+}
+
+// Pixel to rem converter in general
+@function calculate-rem($size) {
+  $rem-size: $size / 16px;
+  @return $rem-size * 1rem;
+}

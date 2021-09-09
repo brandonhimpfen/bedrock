@@ -1,0 +1,11 @@
+// Padding
+// Usage: @include padding(top, left, bottom, right);
+// Example: @include padding(1px, 2px, 3px, 4px);
+// --------------------------------------------------
+
+@mixin padding($top, $left, $bottom, $right) {
+  padding-top: $top;
+  padding-left: $left;
+  padding-bottom: $bottom;
+  padding-right: $right;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "bedrock",
+  "version": "0.3.1",
+  "description": "Bedrock is a lightweight, feature-rich front-end framework for developing responsive, mobile first websites and web apps.",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "frontend",
+    "framework",
+    "ux",
+    "design"
+  ],
+  "main": [
+    "css/bedrock.css",
+    "css/bedrock.min.css"
+  ],
+  "ignore": [
+    "style-guide.html",
+    "node_modules/",
+    ".bundle/",
+    "bundler/",
+    "*.md",
+    "LICENSE"
+  ],
+  "author": "Brandon Himpfen"
+}
